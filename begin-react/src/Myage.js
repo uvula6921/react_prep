@@ -1,10 +1,14 @@
 import React from 'react';
 
-const MyAge = ({ age }) => {
+function MyAge({age, onIncrease}) {
+  
   return (
-    <div>
-      내 나이는 { age } 입니다.
-    </div>
+    <>
+      <div>
+        내 나이는 { age } 입니다.
+      </div>
+      <button onClick={onIncrease}>+1</button>
+    </>
   )
 }
 
